@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytical questions</title>
+    <link rel="stylesheet" href="quizStyle.css">
+</head>
+
+<body>
+
+    <body>
+
+        <div id="questionBox">
+            <h1>Q10: You have good leadership roles</h1>
+        </div>
+
+        <div id="questionButtons">
+            <button onclick="recordAnswer('analytical', 'option1')">Agree</button>
+            <button onclick="recordAnswer('analytical', 'option2')">Strongly Agree</button>
+            <button onclick="recordAnswer('analytical', 'option3')">Disagree</button>
+            <button onclick="recordAnswer('analytical', 'option4')">Strongly Disagree</button>
+        </div>
+
+        <div id="navigationButtons">
+            <a href="q10.html"><button id="backButton">Back</button></a>
+            <a href="q12.html"><button id="nextButton">Next</button></a>
+        </div>
+
+        <script>
+            // Record selected answer and save it in local storage
+            function recordAnswer(category, answer) {
+                console.log(`Chosen answer for ${category}: ${answer}`);
+
+                // Get previous total for catergory or 0 if first q in catergory
+                const previousTotal = parseInt(localStorage.getItem(`${category}Total`)) || 0;
+
+                // Increment current total for catergory
+                const currentAnswerValue = getValueForAnswer(answer);
+                const newTotal = previousTotal + currentAnswerValue;
+
+                // Save total for category in local storage
+                localStorage.setItem(`${category}Total`, newTotal);
+
+                // Alert for testing purposes
+                // Remove in production
+                alert(`Chosen answer for ${category}: ${answer}\nRecorded value: ${currentAnswerValue}\nNew Total: ${newTotal}`);
+            }
+
+            // Value associated with each button/answer
+            function getValueForAnswer(answer) {
+                const values = {
+                    'option1': 1,
+                    'option2': 2,
+                    'option3': 0,
+                    'option4': -1,
+                };
+
+                return values[answer] || 0;
+            }
+        </script>
+
+    </body>
+</body>
+
+</html>
