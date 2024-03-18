@@ -1,11 +1,10 @@
 // Function to validate sign-up form inputs
 function validateSignUp() {
-    var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
     // Check if any field is empty
-    if (username == "" || email == "" || password == "") {
+    if (email == "" || password == "") {
         alert("Please fill in all fields.");
         return false;
     }
