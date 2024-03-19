@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases Degree</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Databases Degree</h1>
+</header>
+
+<div class="container">
+    <img src="databases_image.jpg" alt="Databases Image">
+
+    <h2>About Databases</h2>
+    <p>The Databases degree focuses on the design, development, and management of databases. It covers various aspects such as database modeling, SQL programming, data warehousing, and database administration.</p>
+
+    <h2>Required Classes</h2>
+    <ul>
+        <li>Introduction to Databases</li>
+        <li>Database Design and Management</li>
+        <li>SQL Programming</li>
+        <li>Data Warehousing and Business Intelligence</li>
+        <li>Database Administration</li>
+        <li>Big Data Analytics</li>
+        <li>Data Mining</li>
+        <li>Advanced Topics in Databases</li>
+        <li>Internship in Database Management</li>
+        <li>Senior Project in Databases</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 Databases Department</p>
+</footer>
+
+</body>
+</html>
