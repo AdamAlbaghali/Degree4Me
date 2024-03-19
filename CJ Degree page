@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criminal Justice Degree</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Criminal Justice Degree</h1>
+</header>
+
+<div class="container">
+    <img src="criminal_justice_image.jpg" alt="Criminal Justice Image">
+
+    <h2>About Criminal Justice</h2>
+    <p>The Criminal Justice degree focuses on the study of crime, law enforcement, and the criminal justice system. It provides students with knowledge and skills in criminal law, criminology, forensic science, and criminal investigation.</p>
+
+    <h2>Required Classes</h2>
+    <ul>
+        <li>Introduction to Criminal Justice</li>
+        <li>Criminology</li>
+        <li>Police Practices and Procedures</li>
+        <li>Criminal Law and Procedure</li>
+        <li>Forensic Science</li>
+        <li>Victimology</li>
+        <li>Corrections and Penology</li>
+        <li>Juvenile Justice</li>
+        <li>Crime Scene Investigation</li>
+        <li>Senior Capstone i
