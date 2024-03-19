@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performing Arts Degree</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Performing Arts Degree</h1>
+</header>
+
+<div class="container">
+    <img src="performing_arts_image.jpg" alt="Performing Arts Image">
+
+    <h2>About Performing Arts</h2>
+    <p>The Performing Arts degree offers comprehensive training in various aspects of performance, including acting, dance, and music. Students develop their skills in performance techniques, stagecraft, and artistic expression.</p>
+
+    <h2>Required Classes</h2>
+    <ul>
+        <li>Acting Techniques</li>
+        <li>Dance Performance</li>
+        <li>Vocal Training</li>
+        <li>Theater History</li>
+        <li>Stagecraft and Production</li>
+        <li>Script Analysis</li>
+        <li>Musical Theater</li>
+        <li>Improvisation</li>
+        <li>Directing</li>
+        <li>Senior Performance Project</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 Performing Arts Department</p>
+</footer>
+
+</body>
+</html>
