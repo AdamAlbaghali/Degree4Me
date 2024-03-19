@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberal Arts Degree</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #004080;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Liberal Arts Degree</h1>
+</header>
+
+<div class="container">
+    <img src="liberal_arts.jpg" alt="Liberal Arts Image">
+
+    <h2>About Liberal Arts</h2>
+    <p>The Liberal Arts degree offers a broad education covering various subjects in the humanities, social sciences, and natural sciences. It focuses on critical thinking, communication skills, and a well-rounded understanding of the world.</p>
+
+    <h2>Required Classes</h2>
+    <ul>
+        <li>Introduction to Philosophy</li>
+        <li>English Composition</li>
+        <li>History of Western Civilization</li>
+        <li>Introduction to Psychology</li>
+        <li>Principles of Sociology</li>
+        <li>Mathematics for Liberal Arts</li>
+        <li>Introduction to Political Science</li>
+        <li>Introduction to Fine Arts</li>
+        <li>Foreign Language Studies</li>
+        <li>Senior Seminar in Liberal Arts</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 Liberal Arts Department</p>
+</footer>
+
+</body>
+</html>
