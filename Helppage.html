@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help</title>
     <style>
-        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -62,36 +61,6 @@
         .nav-area li a:hover {
             background-color: #007c75;
         }
-        
-        #chat-container {
-            margin-top: 20px;
-        }
-        #chat-box {
-            height: 300px;
-            overflow-y: scroll;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        #user-input {
-            width: 80%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #00fecb;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #007c75;
-        }
     </style>
 </head>
 <body>
@@ -102,15 +71,15 @@
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="#">Help</a></li>
             <li><a href="#">Find my Degree</a></li>
-            <li><a href="contact.html">Department Contacts </a></li>
-            <li><a href="Contactus.html">Contact us! </a></li>
+            <li><a href="contact.html">Department Contacts</a></li>
+            <li><a href="Contactus.html">Contact us!</a></li>
         </ul>
     </header>
     <div class="container">
         <h2>Need Help?</h2>
         <p>If you require assistance or have any questions, please feel free to <a href="Contactus.html">contact us</a>.</p>
         
-        
+      
         <div id="chat-container">
             <div id="chat-box"></div>
             <input type="text" id="user-input" placeholder="Type your message...">
@@ -118,7 +87,7 @@
         </div>
     </div>
 
-    
+
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
         intent="WELCOME"
@@ -131,4 +100,9 @@
         function sendMessage() {
             var userInput = document.getElementById("user-input").value;
             document.getElementById("chat-box").innerHTML += "<p>User: " + userInput + "</p>";
-         
+     
+            document.getElementById("user-input").value = "";
+        }
+    </script>
+</body>
+</html>
