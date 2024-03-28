@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Help</title>
     <style>
         body {
@@ -13,7 +14,17 @@
             color: #333;
             text-align: center;
         }
-        .container {
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #00fecb;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .container2 {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
@@ -31,40 +42,39 @@
             line-height: 1.6;
             margin-bottom: 20px;
         }
-        a {
-            color: #00fecb;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #007c75;
-        }
+        
         .nav-area {
             list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin-top: 10px;
         }
+
         .nav-area li {
-            margin-left: 20px;
-            display: inline-block; 
+            display: inline-block;
+            margin-left: 15px;
         }
+
         .nav-area li a {
-            color: #fff;
+            color: #000000;
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #00fecb;
-            transition: background-color 0.3s ease;
-            display: block; 
+            font-size: 16px;
         }
+
         .nav-area li a:hover {
-            background-color: #007c75;
+            background: #fff;
+            color: #333;
+        }
+
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .navbar {
+            padding: 10px 0;
         }
    
-        button {
+        button2 {
             display: block;
             margin: 10px auto;
             background-color: #00fecb;
@@ -77,24 +87,50 @@
             width: 80%; /
             max-width: 200px; 
         }
-        button:hover {
+        button2:hover {
             background-color: #007c75;
         }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Degree4Me_Logo3.png" alt="Degree 4 Me">
+                Degree 4 Me
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Helppage.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find my Degree</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Department Contacts </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactus.html">Contact us! </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header>
         <h1>Help</h1>
-        <ul class="nav-area">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Find my Degree</a></li>
-            <li><a href="contact.html">Department Contacts</a></li>
-            <li><a href="Contactus.html">Contact us!</a></li>
-        </ul>
     </header>
-    <div class="container">
+    <div class="container2">
         <h2>Need Help?</h2>
         <p>If you require assistance or have any questions, please feel free to <a href="Contactus.html">contact us</a>.</p>
         
@@ -102,7 +138,7 @@
         <div id="chat-container">
             <div id="chat-box"></div>
             <input type="text" id="user-input" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
+            <button2 onclick="sendMessage()">Send</button2>
         </div>
     </div>
 
@@ -123,5 +159,8 @@
             document.getElementById("user-input").value = "";
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

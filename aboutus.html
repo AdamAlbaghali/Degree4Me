@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>About Us</title>
     <style>
-        html, body {
+        html,
+        body {
             font-family: 'Poppins', sans-serif;
             margin: 0px;
             height: 100%;
@@ -13,15 +16,15 @@
             color: rgb(0, 0, 0);
             text-align: center;
         }
+
         header {
             text-align: center;
             padding: 20px;
-            background-color: transparent; 
+            background-color: transparent;
             border-bottom: 2px solid black;
-            display: flex;
             align-items: center;
-            justify-content: space-between;
         }
+
         section {
             margin-bottom: 40px;
             background-color: #fff;
@@ -29,18 +32,19 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
+
         h2 {
             color: #000000;
         }
+
         h1 {
             color: #000000;
-            
+            text-align: center;
         }
+
         .nav-area {
-            float: right;
             list-style: none;
             margin-top: 10px;
-            margin-right: 20px;
         }
 
         .nav-area li {
@@ -58,36 +62,80 @@
             background: #fff;
             color: #333;
         }
+
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .navbar {
+            padding: 10px 0;
+        }
     </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Degree4Me_Logo3.png" alt="Degree 4 Me">
+                Degree 4 Me
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Helppage.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Department Contacts </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactus.html">Contact us! </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header>
         <h1>About Us</h1>
-        <ul class="nav-area">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="Helppage.html">Help</a></li>
-            <li><a href="#">Find my Degree</a></li>
-            <li><a href="contact.html">Department Contacts </a></li>
-            <li><a href="Contactus.html">Contact us! </a></li>
-        </ul>
     </header>
 
     <section>
         <h2>Our Goal</h2>
-        <p>We are committed to helping every student find their calling and set themselves up on a rewarding and satisfying path.</p>
+        <p>We are committed to helping every student find their calling and set themselves up on a rewarding and
+            satisfying path.</p>
     </section>
 
     <section>
         <h2>Mission Statement</h2>
-        <p>When envisioning this site, we set out to empower students in discovering their passion, unlocking their potential, and confidently navigating their career journey through personalized guidance, resources, and support</p>
+        <p>When envisioning this site, we set out to empower students in discovering their passion, unlocking their
+            potential, and confidently navigating their career journey through personalized guidance, resources, and
+            support</p>
     </section>
 
-     <section>
+    <section>
         <h2 class="html-tag">Who We Are</h2>
-        <p>We are a dedicated team of College Students who are passionate about guiding other students towards their academic and career success. With only 2-3 years of experience and expertise, we provide personalized support and resources to help students make informed decisions and achieve their goals.</p>
+        <p>We are a dedicated team of College Students who are passionate about guiding other students towards their
+            academic and career success. With only 2-3 years of experience and expertise, we provide personalized
+            support and resources to help students make informed decisions and achieve their goals.</p>
     </section>
 
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
