@@ -14,6 +14,7 @@ h1 {
   border: 5px solid #00fecb;
   padding: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -26,10 +27,9 @@ h1 {
 }
 
 
-button {
+.quiz-option {
   background-color: #00fecb;
   color: black;
-  border: none;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -41,7 +41,7 @@ button {
   transition-duration: 0.4s;
 }
 
-button:hover {
+.quiz-option:hover {
   background-color: #00d4b6;
   color: white;
 }
@@ -70,4 +70,35 @@ button:hover {
 #nextButton {
   background-color: green;
   color: white;
+}
+
+.nav-area {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.nav-area li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.nav-area li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-area li a:hover {
+  background: #fff;
+  color: #333;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar {
+  padding: 10px 0;
 }

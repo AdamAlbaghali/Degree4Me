@@ -5,63 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative questions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="quizStyle.css">
 </head>
 
 <body>
 
-    <body>
-
-        <div id="questionBox">
-            <h1>Q21: You enjoy watching movies/ listening to music </h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Degree4Me_Logo3.png" alt="Degree 4 Me">
+                Degree 4 Me
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Helppage.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Department Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contactus.html">Contact us!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.html">Log in</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div id="questionButtons">
-            <button onclick="recordAnswer('creative', 'option1')">Agree</button>
-            <button onclick="recordAnswer('creative', 'option2')">Strongly Agree</button>
-            <button onclick="recordAnswer('creative', 'option3')">Disagree</button>
-            <button onclick="recordAnswer('creative', 'option4')">Strongly Disagree</button>
-        </div>
+    <div id="questionBox">
+        <h1>Q21: You enjoy watching movies/ listening to music </h1>
+    </div>
 
-        <div id="navigationButtons">
-            <a href="q20.html"><button id="backButton">Back</button></a>
-            <a href="../index.html"><button id="nextButton">Next</button></a>
-        </div>
+    <div id="questionButtons">
+        <span class="quiz-option" onclick="recordAnswer('creative', 'option1')">Agree</span>
+        <span class="quiz-option" onclick="recordAnswer('creative', 'option2')">Strongly Agree</span>
+        <span class="quiz-option" onclick="recordAnswer('creative', 'option3')">Disagree</span>
+        <span class="quiz-option" onclick="recordAnswer('creative', 'option4')">Strongly Disagree</span>
+    </div>
 
-        <script>
-            // Record selected answer and save it in local storage
-            function recordAnswer(category, answer) {
-                console.log(`Chosen answer for ${category}: ${answer}`);
+    <div id="navigationButtons">
+        <a href="q20.html"><button id="backButton">Back</button></a>
+        <a href="../index.html"><button id="nextButton">Next</button></a>
+    </div>
 
-                // Get previous total for catergory or 0 if first q in catergory
-                const previousTotal = parseInt(localStorage.getItem(`${category}Total`)) || 0;
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-                // Increment current total for catergory
-                const currentAnswerValue = getValueForAnswer(answer);
-                const newTotal = previousTotal + currentAnswerValue;
+    <script>
+        // Record selected answer and save it in local storage
+        function recordAnswer(category, answer) {
+            console.log(`Chosen answer for ${category}: ${answer}`);
 
-                // Save total for category in local storage
-                localStorage.setItem(`${category}Total`, newTotal);
+            // Get previous total for catergory or 0 if first q in catergory
+            const previousTotal = parseInt(localStorage.getItem(`${category}Total`)) || 0;
 
-                // Alert for testing purposes
-                // Remove in production
-                alert(`Chosen answer for ${category}: ${answer}\nRecorded value: ${currentAnswerValue}\nNew Total: ${newTotal}`);
-            }
+            // Increment current total for catergory
+            const currentAnswerValue = getValueForAnswer(answer);
+            const newTotal = previousTotal + currentAnswerValue;
 
-            // Value associated with each button/answer
-            function getValueForAnswer(answer) {
-                const values = {
-                    'option1': 1,
-                    'option2': 2,
-                    'option3': 0,
-                    'option4': -1,
-                };
+            // Save total for category in local storage
+            localStorage.setItem(`${category}Total`, newTotal);
 
-                return values[answer] || 0;
-            }
-        </script>
+            // Alert for testing purposes
+            // Remove in production
+            alert(`Chosen answer for ${category}: ${answer}\nRecorded value: ${currentAnswerValue}\nNew Total: ${newTotal}`);
+        }
 
-    </body>
+        // Value associated with each button/answer
+        function getValueForAnswer(answer) {
+            const values = {
+                'option1': 1,
+                'option2': 2,
+                'option3': 0,
+                'option4': -1,
+            };
+
+            return values[answer] || 0;
+        }
+    </script>
+
 </body>
 
 </html>
