@@ -32,49 +32,32 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #00fecb;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
         .nav-area {
             list-style: none;
             margin-top: 10px;
         }
-
         .nav-area li {
             display: inline-block;
             margin-left: 15px;
         }
-
         .nav-area li a {
             color: #000000;
             text-decoration: none;
             font-size: 16px;
         }
-
         .nav-area li a:hover {
             background: #fff;
             color: #333;
         }
-
         .navbar-brand img {
             width: 100px;
             height: auto;
             margin-right: 10px;
         }
-
         .navbar {
             padding: 10px 0;
         }
-   
-        button2 {
+        .button2 {
             display: block;
             margin: 10px auto;
             background-color: #00fecb;
@@ -84,10 +67,10 @@
             padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            width: 80%; /
+            width: 80%;
             max-width: 200px; 
         }
-        button2:hover {
+        .button2:hover {
             background-color: #007c75;
         }
     </style>
@@ -134,28 +117,17 @@
         <h2>Need Help?</h2>
         <p>If you require assistance or have any questions, please feel free to <a href="Contactus.html">contact us</a>.</p>
         
-      
         <div id="chat-container">
             <div id="chat-box"></div>
             <input type="text" id="user-input" placeholder="Type your message...">
-            <button2 onclick="sendMessage()">Send</button2>
+            <button class="button2" onclick="sendMessage()">Send</button>
         </div>
     </div>
-
-
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-        intent="WELCOME"
-        chat-icon="https://www.gstatic.com/dialogflow-console/fast/messenger/prod/images/bot/happy-unicorn-face.png"
-        agent-id="YOUR_AGENT_ID"
-        language-code="en"
-    ></df-messenger>
 
     <script>
         function sendMessage() {
             var userInput = document.getElementById("user-input").value;
             document.getElementById("chat-box").innerHTML += "<p>User: " + userInput + "</p>";
-     
             document.getElementById("user-input").value = "";
         }
     </script>
@@ -164,3 +136,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
