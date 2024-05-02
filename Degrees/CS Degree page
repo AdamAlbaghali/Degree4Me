@@ -68,11 +68,16 @@
         <p>Description: This degree program covers a wide range of topics in computer science, including programming, algorithms, data structures, and software engineering.</p>
         <h2>Required Classes:</h2>
         <ul class="class-list">
+            <li>Into to Java</li>
+            <li>Modern Programming Techniques</li>
+            <li>Discrete Structures</li>
             <li>Data Structures</li>
+            <li>Computer Ethics</li>
             <li>Algorithms</li>
             <li>Computer Architecture</li>
             <li>Operating Systems</li>
-            <li>Software Engineering</li>
+            <li>Web Applications</li>
+            <li>Programming Paradigms in C++</li>
         </ul>
     </div>
 </body>
