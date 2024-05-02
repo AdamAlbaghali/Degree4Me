@@ -63,10 +63,6 @@ Strongly disagree                -1  points
 
 
 Realistic/hands-on questions:
-
-
-
-
 1. You enjoy building things
 2. You enjoy creating things if possible instead of purchasing them 
 3. You prefer learning through hands-on activities rather than lectures
@@ -103,9 +99,13 @@ Enterprising:
 1. You enjoy the idea of working in an office
 2. You are capable of taking on a leadership role
 3. You enjoy being up to date with current events
-
+4. You are often described as ambitious, driven, or goal-oriented by friends and family ------------------
+5. You find yourself naturally gravitating towards roles that involve negotiating, persuading, or influencing others ---------------------
 
 Creative/Artistic:
 1. You enjoy creating art
 2. You enjoy watching movies/ listening to music
-3.
+3. You feel energized or inspired when visiting art galleries, museums, or attending live performances--------------
+4. You often notice and appreciate aesthetic details in your surroundings, such as colors, shapes, or patterns--------
+5. You enjoy exploring different art forms or experimenting with different creative outlets--------------------
+    
