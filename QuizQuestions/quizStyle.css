@@ -18,6 +18,15 @@ h1 {
   text-align: center;
 }
 
+#resultBox {
+  border: 5px solid #e5fe00;
+  color: #e5fe00;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 #questionButtons {
   text-align: center;
   display: grid;

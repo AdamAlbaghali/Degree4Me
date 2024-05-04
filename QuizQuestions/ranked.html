@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quizStyle.css">
+    <style>
+        .result-text {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #e5fe00;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #000000;
+            text-align: center;
+            color: #e5fe00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Degree4Me_Logo3.png" alt="Degree 4 Me">
+                Degree 4 Me
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Helppage.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Department Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contactus.html">Contact us!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login.html">Log in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="resultBox">
+        <h1>Your Results!</h1>
+    </div>
+
+    <div id="resultsRanked">
+
+    </div>
+
+    <div id="navigationButtons">
+        <a href="../index.html"><button id="nextButton">Back To Home</button></a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Retrieve values from localStorage
+        const data = {
+            creative: localStorage.getItem('creativeTotal') || 0,
+            enterprising: localStorage.getItem('enterprisingTotal') || 0,
+            social: localStorage.getItem('socialTotal') || 0,
+            analytical: localStorage.getItem('analyticalTotal') || 0,
+            realistic: localStorage.getItem('realisticTotal') || 0
+        };
+
+        // Turn data to array
+        const dataArray = Object.keys(data).map(key => ({ key, value: parseInt(data[key]) }));
+
+        // Sort array
+        dataArray.sort((a, b) => b.value - a.value);
+        console.log("Sorted data:", dataArray);
+        // Top 3 values
+        const top3 = dataArray.slice(0, 3);
+
+        // Degrees
+        const predeterminedTexts = {
+            realistic: `Realistic:<br><a href="path/to/your/file.html">Mechanical Engineering</a><br><a href="path/to/your/file.html">Firefighter</a><br><a href="path/to/your/file.html">Construction</a><br><a href="path/to/your/file.html">Architect</a>`,
+            enterprising: `Enterprising:<br><a href="path/to/your/file.html">Finance</a><br><a href="path/to/your/file.html">Business Management</a><br><a href="path/to/your/file.html">Marketing</a><br><a href="path/to/your/file.html">Politics</a><br><a href="path/to/your/file.html">Law</a><br><a href="path/to/your/file.html">Accouting</a>`,
+            social: `Social:<br><a href="path/to/your/file.html">Social Work</a><br><a href="path/to/your/file.html">Healthcare</a><br><a href="path/to/your/file.html">Education</a><br><a href="path/to/your/file.html">Psychology</a>`,
+            analytical: `Analytical:<br><a href="path/to/your/file.html">Environmental Studies</a><br><a href="path/to/your/file.html">Psychology</a><br><a href="path/to/your/file.html">Biology</a><br><a href="path/to/your/file.html">Chemistry</a><br><a href="path/to/your/file.html">Computer Science</a><br><a href="path/to/your/file.html">Veterinarian</a><br><a href="path/to/your/file.html">Docter</a><br><a href="path/to/your/file.html">Mathemathician</a>`,
+            creative: `Creative:<br><a href="path/to/your/file.html">Graphic Design</a><br><a href="path/to/your/file.html">Film</a><br><a href="path/to/your/file.html">Photography</a><br><a href="path/to/your/file.html">Architecture</a><br><a href="path/to/your/file.html">Musician</a><br><a href="path/to/your/file.html">Chef</a>`
+        };
+
+        // Text Boxes
+        top3.forEach(item => {
+            const textBox = document.createElement('div');
+            textBox.innerHTML = predeterminedTexts[item.key];
+            textBox.classList.add('result-text'); 
+            document.getElementById('resultsRanked').appendChild(textBox);
+        });
+    </script>
+
+</body>
+
+</html>
