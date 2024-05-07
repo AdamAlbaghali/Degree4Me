@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Science Degree</title>
     <style>
-        /* CSS Styles */
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(to top, #00fecb, white) no-repeat;
             color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #1E90FF;
-            color: white;
-            padding: 20px;
             text-align: center;
         }
 
+        header {
+            padding: 20px;
+            background-color: transparent;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         h1 {
-            margin-top: 0;
-            color: #333;
+            color: #000;
             text-align: center;
         }
 
@@ -31,7 +38,7 @@
             width: 80%;
             margin: auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f2f2f2; /* Nice gray color */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -40,15 +47,13 @@
             width: 100%;
             max-width: 400px;
             height: auto;
-            display: block;
             margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #1E90FF;
-            text-align: center;
+            color: #000;
             margin-top: 20px;
         }
 
@@ -56,26 +61,32 @@
             line-height: 1.6;
             color: #666;
             text-align: justify;
+            padding: 0 20px;
         }
 
         ul {
             list-style-type: none;
             padding-left: 0;
+            text-align: left;
+            padding: 0 20px;
         }
 
         ul li {
             margin-bottom: 5px;
             color: #444;
+            padding-left: 20px;
+            position: relative;
         }
 
         ul li:before {
-            content: "\2022"; /* Bullet point */
+            content: "\2022";
             color: #666;
-            margin-right: 5px;
+            position: absolute;
+            left: 0;
         }
 
         footer {
-            background-color: #1E90FF;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -83,36 +94,105 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Navbar styles */
+        .navbar {
+            padding: 10px 0;
+            background-color: #555; /* Dark gray navbar background */
+        }
+
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            filter: brightness(0) invert(1); /* Invert logo colors */
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff; /* Navbar text color */
+            font-weight: bold; /* Make text bold */
+            font-size: 18px; /* Increase font size */
+            text-transform: uppercase; /* Convert text to uppercase */
+            padding: 0 10px; /* Add padding */
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center align navbar items */
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #f2f2f2; /* Active text color */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd; /* Hover text color */
+        }
     </style>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Helppage.html">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find my Degree</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Department Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Contactus.html">Contact us!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <header>
+        <h1>Computer Science Degree</h1>
+    </header>
 
+    <div class="container">
+        <img src="computer_science_image.jpg" alt="Computer Science Image">
 
-<div class="container">
-    <img src="computer_science_image.jpg" alt="Computer Science Image">
+        <h2>About Computer Science</h2>
+        <p>The Computer Science degree program equips students with theoretical knowledge and practical skills in software development, algorithms, data structures, and computer systems. It prepares students for careers in software engineering, data science, cybersecurity, and more.</p>
 
-    <h2>About Computer Science</h2>
-    <p>The Computer Science degree program equips students with theoretical knowledge and practical skills in software development, algorithms, data structures, and computer systems. It prepares students for careers in software engineering, data science, cybersecurity, and more.</p>
-
-    <h2>Core Courses</h2>
-    <ul>
-        <li>Introduction to Computer Science</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Programming Languages</li>
-        <li>Computer Architecture</li>
-        <li>Operating Systems</li>
-        <li>Database Management Systems</li>
-        <li>Software Engineering</li>
-        <li>Computer Networks</li>
-        <li>Artificial Intelligence</li>
-        <li>Security and Cryptography</li>
-    </ul>
-</div>
-
-<footer>
-    <p>&copy; 2024 Computer Science Department</p>
-</footer>
+        <h2>Core Courses</h2>
+        <ul>
+            <li>Introduction to Computer Science</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Programming Languages</li>
+            <li>Computer Architecture</li>
+            <li>Operating Systems</li>
+            <li>Database Management Systems</li>
+            <li>Software Engineering</li>
+            <li>Computer Networks</li>
+            <li>Artificial Intelligence</li>
+            <li>Security and Cryptography</li>
+        </ul>
+    </div>
 
 </body>
+
 </html>
