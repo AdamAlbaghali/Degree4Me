@@ -1,136 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Psychology Degree</title>
-        <style>
-            /* CSS Styles */
-            /* Reset styles */
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-    
-            body {
-                font-family: 'Poppins', sans-serif;
-                background: linear-gradient(to top, #00fecb, white) no-repeat;
-                color: #000;
-                text-align: center;
-            }
-    
-            header {
-                padding: 20px;
-                background-color: transparent;
-                border-bottom: 2px solid black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-    
-            h1 {
-                color: #000;
-                text-align: center;
-            }
-    
-            .container {
-                width: 80%;
-                margin: auto;
-                padding: 20px;
-                background-color: #f2f2f2; /* Nice gray color */
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            img {
-                width: 100%;
-                max-width: 400px;
-                height: auto;
-                margin: 20px auto;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            h2 {
-                color: #000;
-                margin-top: 20px;
-            }
-    
-            p {
-                line-height: 1.6;
-                color: #666;
-                text-align: justify;
-                padding: 0 20px;
-            }
-    
-            ul {
-                list-style-type: none;
-                padding-left: 0;
-                text-align: left;
-                padding: 0 20px;
-            }
-    
-            ul li {
-                margin-bottom: 5px;
-                color: #444;
-                padding-left: 20px;
-                position: relative;
-            }
-    
-            ul li:before {
-                content: "\2022";
-                color: #666;
-                position: absolute;
-                left: 0;
-            }
-    
-            /* Navbar styles */
-            .navbar {
-                padding: 10px 0;
-                background-color: #555; /* Dark gray navbar background */
-            }
-    
-            .navbar-brand img {
-                width: 100px;
-                height: auto;
-                margin-right: 10px;
-                filter: brightness(0) invert(1); /* Invert logo colors */
-            }
-    
-            .navbar-brand,
-            .navbar-nav .nav-link {
-                color: #fff; /* Navbar text color */
-                font-weight: bold; /* Make text bold */
-                font-size: 18px; /* Increase font size */
-                text-transform: uppercase; /* Convert text to uppercase */
-                padding: 0 10px; /* Add padding */
-            }
-    
-            .navbar-nav {
-                display: flex;
-                align-items: center;
-                justify-content: center; /* Center align navbar items */
-            }
-    
-            .navbar-nav .nav-item {
-                margin-right: 15px;
-            }
-    
-            .navbar-nav .nav-link.active {
-                color: #f2f2f2; /* Active text color */
-            }
-    
-            .navbar-nav .nav-link:hover {
-                color: #ddd; /* Hover text color */
-            }
-        </style>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Degree</title>
+    <style>
+        /* CSS Styles */
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to top, #00fecb, white) no-repeat;
+            color: #000;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background-color: transparent;
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: #000;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            /* Nice gray color */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #000;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            color: #444;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "\2022";
+            color: #666;
+            position: absolute;
+            left: 0;
+        }
+
+        footer button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer button.previous {
+            background-color: red;
+        }
+
+        footer button.next {
+            background-color: rgb(45, 185, 127);
+        }
+
+        /* Navbar styles */
+        .navbar {
+            padding: 10px 0;
+            background-color: #555;
+            /* Dark gray navbar background */
+        }
+
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            filter: brightness(0) invert(1);
+            /* Invert logo colors */
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff;
+            /* Navbar text color */
+            font-weight: bold;
+            /* Make text bold */
+            font-size: 18px;
+            /* Increase font size */
+            text-transform: uppercase;
+            /* Convert text to uppercase */
+            padding: 0 10px;
+            /* Add padding */
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center align navbar items */
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #f2f2f2;
+            /* Active text color */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ddd;
+            /* Hover text color */
+        }
+    </style>
+</head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -159,7 +187,8 @@
     <div class="degree-container">
         <img src="degree_image.jpg" alt="Degree Image">
         <h1>Degree in Psychology</h1>
-        <p>Description: This degree program covers a wide range of topics in a Psychology degree, including Intro to Psychology, Statistics for Psychology, and Social Psychology</p>
+        <p>Description: This degree program covers a wide range of topics in a Psychology degree, including Intro to
+            Psychology, Statistics for Psychology, and Social Psychology</p>
         <h2>Required Classes:</h2>
         <ul class="class-list">
             <li>Introduction to Psychology</li>
@@ -172,5 +201,10 @@
             <li>Biological Psychology</li>
         </ul>
     </div>
+    <footer>
+        <button class="previous" onclick="window.location.href='PA Degree page.html'">Previous</button>
+        <button class="next" onclick="window.location.href='#'">Next</button>
+    </footer>
 </body>
+
 </html>

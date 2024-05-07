@@ -85,14 +85,20 @@
             left: 0;
         }
 
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        footer button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer button.previous {
+            background-color: red;
+        }
+
+        footer button.next {
+            background-color: rgb(45, 185, 127);
         }
 
         /* Navbar styles */
@@ -192,6 +198,10 @@
         </ul>
     </div>
     
+    <footer>
+        <button class="previous" onclick="window.location.href='Business.html'">Previous</button>
+        <button class="next" onclick="window.location.href='CompSci.html'">Next</button>
+    </footer>
 
 </body>
 

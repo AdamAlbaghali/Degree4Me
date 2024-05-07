@@ -86,6 +86,21 @@
             left: 0;
         }
 
+        footer button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer button.previous {
+            background-color: red;
+        }
+
+        footer button.next {
+            background-color: rgb(45, 185, 127);
+        }
         /* Navbar styles */
         .navbar {
             padding: 10px 0;
@@ -180,6 +195,11 @@
             <li>Ethics in Finance</li>
         </ul>
     </div>
+
+    <footer>
+        <button class="previous" onclick="window.location.href='FashionDesign.html'">Previous</button>
+        <button class="next" onclick="window.location.href='History.html'">Next</button>
+    </footer>
 </body>
 
 </html>
