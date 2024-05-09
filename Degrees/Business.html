@@ -16,9 +16,18 @@
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(to top, #00fecb, white) no-repeat;
+            background-size: cover;
+            /* Cover the entire viewport */
+            background-attachment: fixed;
+            /* Keep background fixed while scrolling */
             color: #000;
             text-align: center;
+            margin: 0;
+            /* Remove default body margin */
+            padding: 0;
+            /* Remove default body padding */
         }
+
 
         header {
             padding: 20px;
@@ -38,7 +47,8 @@
             width: 80%;
             margin: auto;
             padding: 20px;
-            background-color: #f2f2f2; /* Nice gray color */
+            background-color: #f2f2f2;
+            /* Nice gray color */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -104,29 +114,37 @@
         /* Navbar styles */
         .navbar {
             padding: 10px 0;
-            background-color: #555; /* Dark gray navbar background */
+            background-color: #555;
+            /* Dark gray navbar background */
         }
 
         .navbar-brand img {
             width: 100px;
             height: auto;
             margin-right: 10px;
-            filter: brightness(0) invert(1); /* Invert logo colors */
+            filter: brightness(0) invert(1);
+            /* Invert logo colors */
         }
 
         .navbar-brand,
         .navbar-nav .nav-link {
-            color: #fff; /* Navbar text color */
-            font-weight: bold; /* Make text bold */
-            font-size: 18px; /* Increase font size */
-            text-transform: uppercase; /* Convert text to uppercase */
-            padding: 0 10px; /* Add padding */
+            color: #fff;
+            /* Navbar text color */
+            font-weight: bold;
+            /* Make text bold */
+            font-size: 18px;
+            /* Increase font size */
+            text-transform: uppercase;
+            /* Convert text to uppercase */
+            padding: 0 10px;
+            /* Add padding */
         }
 
         .navbar-nav {
             display: flex;
             align-items: center;
-            justify-content: center; /* Center align navbar items */
+            justify-content: center;
+            /* Center align navbar items */
         }
 
         .navbar-nav .nav-item {
@@ -134,20 +152,21 @@
         }
 
         .navbar-nav .nav-link.active {
-            color: #f2f2f2; /* Active text color */
+            color: #f2f2f2;
+            /* Active text color */
         }
 
         .navbar-nav .nav-link:hover {
-            color: #ddd; /* Hover text color */
+            color: #ddd;
+            /* Hover text color */
         }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
