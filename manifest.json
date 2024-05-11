@@ -9,13 +9,13 @@
     "description":"This is Degree4Me.",
     "icons":[
     {
-    "src":"/images/icon-192x192.png",                      
+    "src":"/CISC-4900//images/icon-192x192.png",                      
     "sizes":"192x192",
     "type":"image/png",
     "purpose": "any"
     },
     {
-    "src":"/images/icon-512x512.png",
+    "src":"/CISC-4900//images/icon-512x512.png",
     "sizes":"512x512",
     "type":"image/png",
     "purpose": "any"
